@@ -1,6 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-
 <head>
 	<script>
 		digitalData = {
@@ -10,7 +9,10 @@
 				},
 				pageInfo: {
 					pageID: 'SandboxId',
-					productTitle: 'SandboxPage'
+					productTitle: 'SandboxPage',
+					analytics: {
+                    				category: 'Offering Interface'
+                			}
 				}
 			}
 		};
@@ -21,17 +23,17 @@
 	<script src="https://console.bluemix.net/analytics/build/bluemix-analytics.min.js"></script>
 	<script>
 	window.bluemixAnalytics.trackEvent('Created Object',{
-	    productTitle: digitalData.page.pageInfo.productTitle,
-	    category: 'Testing ('+digitalData.page.pageInfo.productTitle+')',
-	    object: 'database',
-	    objectType: 'example',
-	    successFlag: 'true'
-	});
-		
-	
-	</script>
-	
+		productTitle: digitalData.page.pageInfo.productTitle,
+	    	category: 'Testing ('+digitalData.page.pageInfo.productTitle+')',
+		resultValue: 'test event sent',
+    		customName1: 'color',
+    		customValue1: 'blue',		
+	    	object: 'database',
+	    	objectType: 'example',
+	    	successFlag: 'true'
+	});	
+	</script>	
 </head>
 <body>
-	Hello World test 1!
+	Hello World test 2!
 </body>
