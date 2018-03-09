@@ -1,75 +1,37 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-
 <html>
 
-
-
 <head>
-
-<script>
-
-
-
-digitalData = {
-
-page: {
-
-category: {
-
-primaryCategory : "REPLACE"
-
-},
-
-pageInfo: {
-
-pageID: 'Ramesh-Sandbox',
-
-productTitle: 'Ramesh-Sandbox'
-
-}
-
-}
-
-};
-
-
-
-
-
-</script>
-
-<script type="text/javascript"> window._analytics = { "segment_key" : "AayxByZU7H0JzDIb8i6UMwzHZwr9O35b", "coremetrics" : false, "optimizely" : false, "googleAddServices": false, "addRoll" : false, "fullStory" : false}; </script>
-
-<script src="https://console.bluemix.net/analytics/build/bluemix-analytics.min.js"></script>
-
-<script>
-
-window.bluemixAnalytics.trackEvent('Created Object',{
-
-productTitle: digitalData.page.pageInfo.productTitle,
-
-category: 'Testing ('+digitalData.page.pageInfo.productTitle+')',
-
-object: 'database',
-
-objectType: 'example',
-
-successFlag: 'true'
-
-});
-
-
-
-
-
-</script>
-
-
-
+	<script>
+		digitalData = {
+			page: {
+				category: {
+					primaryCategory : "REPLACE"
+				},
+				pageInfo: {
+					pageID: 'SandboxId',
+					productTitle: 'SandboxPage'
+				}
+			}
+		};
+		
+		
+	</script>
+	<script type="text/javascript"> window._analytics = { "segment_key" : "AayxByZU7H0JzDIb8i6UMwzHZwr9O35b", "coremetrics" : false, "optimizely" : false, "googleAddServices": false, "addRoll" : false, "fullStory" : false}; </script>
+	<script src="https://console.bluemix.net/analytics/build/bluemix-analytics.min.js"></script>
+	<script>
+	window.bluemixAnalytics.trackEvent('Created Object',{
+	    productTitle: digitalData.page.pageInfo.productTitle,
+	    category: 'Testing ('+digitalData.page.pageInfo.productTitle+')',
+	    object: 'database',
+	    objectType: 'example',
+	    successFlag: 'true'
+	});
+		
+	
+	</script>
+	
 </head>
-
 <body>
-
-Hello World to test changes!
-
+	Hello World test!
 </body>
